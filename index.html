@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+
+    <title>Condiciones</title>
+</head>
+
+<body>
+
+    <main>
+
+        <H1>Desafio Condiciones</H1>
+
+        <h2>bordes</h2>
+
+        <div class="bordes">
+
+            <img src="./assets/img/3fce5c92e80c2b27d9322e0ef2cee678.jpg" alt="Avatar Aang con pinguinos" id="imagen1"
+                onclick="
+                imagen = document.querySelector('#imagen1')
+
+                
+                if (imagen.style.border === '2px solid red'){
+                    imagen.style.border = 'none'
+                }else{
+                    imagen.style.border = '2px solid red'
+                }" />
+
+
+        </div>
+
+
+        <h2>sticker</h2>
+        <div class="resultado">
+            <div class="ajuste">
+                <!--1-->
+                <div class="stickers">
+                    <img src="./assets/img/appa-avatar-iz6d1sa0w1wuk95s.jpg" alt="bisonte apa">
+                    <input type="number" class="ajuste-texto" id="sticker1">
+                </div>
+                <!--2-->
+                <div class="stickers">
+                    <img src="./assets/img/momo.jpg" alt="lemur momo ">
+                    <input type="number" class="ajuste-texto" id="sticker2">
+                </div>
+                <!--3-->
+                <div class="stickers">
+                    <img src="./assets/img/avatarkyoshi.jpg" alt="AVatar kioshi">
+                    <input type="number" class="ajuste-texto" id="sticker3">
+                </div>
+
+            </div>
+
+
+            <p id="respuesta"></p>
+            <button class="boton-respuesta" onclick="
+            sticker1 = Number(document.querySelector('#sticker1').value)
+let sticker2 = Number(document.querySelector('#sticker2').value)
+let sticker3 = Number(document.querySelector('#sticker3').value)
+let respuesta = document.querySelector('#respuesta')
+let suma = sticker1 + sticker2 + sticker3
+       
+            if( suma <=10 ){
+                respuesta.innerHTML= `llevas ${suma} Stickers`
+            }else{
+respuesta.innerHTML= 'llevas demasiados Stikers'
+
+            }">verificar</button>
+
+        </div>
+
+
+        <div class="password">
+
+            <h2>Ingresa el password</h2>
+            <div class="selecs">
+                <select name="select1" id="digito1">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="select2" id="digito2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="select3" id="digito3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <p id="ingreso"></p>
+
+            <button class="boton2" onclick="
+            let select1 = document.querySelector('#digito1').value
+            let select2 = document.querySelector('#digito2').value
+            let select3 = document.querySelector('#digito3').value
+let ingreso = document.querySelector('#ingreso')
+let concatenacion = select1 + select2 + select3
+
+
+if(concatenacion == 911){
+
+    ingreso.innerHTML= 'Password 1 correcto'
+}else if (concatenacion == 714){
+    ingreso.innerHTML= 'Password 2 correcto'
+}else{
+    ingreso.innerHTML= 'Password incorrecto'
+}
+            
+            ">Ingresar</button>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

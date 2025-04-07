@@ -1,0 +1,112 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-color: antiquewhite;
+
+}
+
+.bordes {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stickers {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+
+}
+
+.stickers img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border: 8px solid black
+}
+
+.ajuste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.ajuste-texto {
+    text-align: center;
+}
+
+
+.boton-respuesta {
+    width: 150px;
+    background-color: grey;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+#respuesta {
+    padding: 20px;
+    font-size: 2rem;
+
+}
+
+
+.password {
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+}
+
+.selecs {
+    padding: 15px;
+
+}
+
+#ingreso {
+    padding: 10px;
+    font-size: 2rem;
+
+
+}
+
+
+
+.boton2 {
+    width: 150px;
+    background-color: grey;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
